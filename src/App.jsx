@@ -10,9 +10,8 @@ function App() {
 
   return (
     <>
-      <Busqueda setResultado={setResultado
-      } setError ={setError}/>
-      <MostrarResultado resultado={resultado}/>
+      <Busqueda setResultado={setResultado} setError ={setError}/>
+      <MostrarResultado resultado={resultado} error={(error)}/>
 
 
     </>

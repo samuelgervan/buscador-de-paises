@@ -1,4 +1,9 @@
-export const MostrarResultado= ({resultado})=>{
+export const MostrarResultado= ({resultado,error})=>{
+    if(error){return <>
+    <h1>No se encontro el pais</h1>
+    
+    </>}
+    
     return<div className="row">
     {resultado.map((element, index)=>{
         console.log (element.flags.svg)
